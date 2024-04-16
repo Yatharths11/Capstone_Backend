@@ -1,10 +1,10 @@
 const express = require("express")
 const router = express.Router()
 
-const { togglelikes } = require("../Controllers/likesControllers")
+const likesControllers = require("../Controllers/likesControllers")
 
 
 //api that toggles the like status of a story
-router.post("toggle", togglelikes)
+router.post("toggle", likesControllers.togglelike)
 
 module.exports = router

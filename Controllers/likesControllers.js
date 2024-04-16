@@ -42,4 +42,4 @@ const togglelike = async (req, res) => {
 };
 
 
-module.exports = togglelike
+module.exports = { togglelike }
